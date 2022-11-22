@@ -23,9 +23,6 @@ $vms = Get-VM | ForEach-Object -MemberName Name
 foreach ($vm in $vms){
     $backupfolder = $vm + $date
     $fullpath = $base + $backupfolder
-
-    #Create Folder
-    #New-Item -ItemType Directory -Name $backupfolder -Path $base
     
     #Export VM(s)
     Export-VM -Name $vm -Path $fullpath -Passthru
