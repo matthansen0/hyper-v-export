@@ -5,4 +5,4 @@ I run a lab environment in Hyper-V and it may not always be feasable to run a fu
 
 While you can certainly use Windows Backup and [Hyper-V Checkpoints](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/checkpoints) sometimes exports just make sense for various reasons.
 
-This script simply runs through all of the VMs in Hyper-V and exports them to a named location with an appended timestamp.
+This script simply runs through all of the VMs in Hyper-V and exports and compresses them to a named location with an appended timestamp.
